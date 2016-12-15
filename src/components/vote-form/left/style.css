@@ -1,4 +1,40 @@
 .description-container{
   width: 40%;
   display: inline-block;
+  width: 400px;
+  margin: 180px 100px 100px 100px;
+  text-align: left;
+  position: fixed;
+  left: 0;
 }
+
+.text-field{
+  display: inline-block;
+  width: 400px;
+  margin: 100px;
+  text-align: left;
+  position: fixed;
+  left: 0;
+}
+
+.submit-search{
+  margin-left: 30px;
+}
+
+/*.description{
+  width: 400px;
+  text-align: left;
+  position: fixed;
+  left: 0;
+}*/
+
+/*.description{
+  background-color: lighten(#0074d9, 20);
+  opacity: .85;
+  padding: 20px;
+  color: rgba(255,255,255,.9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}*/

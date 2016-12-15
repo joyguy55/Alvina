@@ -1,6 +1,7 @@
 .movies-container{
   width: 60%;
   display: inline-block;
+  margin-left: 400px;
 }
 
 .col1{
