@@ -11,7 +11,7 @@ class VoteForm extends React.Component{
   render(){
     return(
       <div className="vote-form">
-        <Search submitSearch={this.props.submitSearch} handleParam={this.props.handleParam}/>
+        <Search handleParam={this.props.handleParam}/>
         <Description movieData={this.props.movieData}/>
         <MovieSelection movieData={this.props.movieData}/>
       </div>

@@ -24,19 +24,9 @@ class App extends Component {
       })
   }
 
-  submitSearch(value){
-    axios
-      .get(`https://api.themoviedb.org/3/search/movie?api_key=0f0bbfb38d44aef5ee75cc44b80f0795&language=en-US&query=${this.state.searchParam}&page=1&include_adult=false`)
-      .then((result)=>{
-        this.setState({
-          movieList: result
-        });
-        console.log(result)
-      })
-  }
-
   handleParam(value){
     this.setState({searchParam:value})
+    this.componentDidMount()
   }
 
   render() {
@@ -45,7 +35,6 @@ class App extends Component {
       <MuiThemeProvider>
         <div className="App">
           <VoteForm movieData={this.state.movieList.data.results}
-                    submitSearch={this.submitSearch.bind(this)}
                     handleParam={this.handleParam.bind(this)}
           />
         </div>
