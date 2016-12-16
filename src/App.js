@@ -25,8 +25,10 @@ class App extends Component {
   }
 
   handleParam(value){
-    this.setState({searchParam:value})
-    this.componentDidMount()
+    let newValue = value.replace(/ /g, '+')
+    console.log(newValue)
+    this.setState({searchParam:newValue})
+    this.componentDidMount() //somehow this is keeping componentDidMount from rerendering???
   }
 
   render() {
