@@ -38,9 +38,9 @@ class Landing extends React.Component{
     if(this.state.movieList === null){return null}
     return(
       <div className="vote-form">
-        <Search handleParam={this.handleParam}/>
+        <Search handleParam={ this.handleParam.bind(this) }/>
         <Description/>
-        <MovieList movieData={this.state.movieList.data.results}/>
+        <MovieList movieData={ this.state.movieList.data.results }/>
       </div>
     )
   }
