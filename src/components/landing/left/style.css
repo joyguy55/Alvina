@@ -1,18 +1,21 @@
-/*.description-container{
-  width: 40%;
+.description-container{
   display: inline-block;
   width: 400px;
-  margin: px;
+  margin: 50px;
   text-align: left;
   position: fixed;
   left: 0;
 }
 
-.text-field{
+.description{
   display: inline-block;
   width: 400px;
-  margin: 100px;
+  margin: 170px 100px;
   text-align: left;
   position: fixed;
   left: 0;
-}*/
+}
+
+p{
+  width: 320px;
+}
