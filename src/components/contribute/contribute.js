@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-const Donate = (props) =>{
+const Contribute = (props) =>{
     return(
       <div className="description-container">
         <div className="description">
@@ -12,4 +12,4 @@ const Donate = (props) =>{
     )
 }
 
-export default Donate
+export default Contribute
