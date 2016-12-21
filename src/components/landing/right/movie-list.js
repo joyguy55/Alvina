@@ -12,10 +12,9 @@ const MovieList= (props) => {
           movieArr1.map((obj,index)=>{
             return(
               <div key={obj.id} className="movie-container">
-                <Link to={'/vote-form'} >
+                <Link to={`/vote-form/${obj.id}`} >
                     <img className="img-circle"
                          key={obj.id}
-                         onClick={ ()=>{} }
                          src={`https://image.tmdb.org/t/p/w342//${movieArr1[index].poster_path}`}/>
                 </Link>
               </div>
@@ -28,10 +27,9 @@ const MovieList= (props) => {
           movieArr2.map((obj,index)=>{
             return(
               <div key={obj.id} className="movie-container">
-                <Link to={'/vote-form'} >
+                <Link to={`/vote-form/${obj.id}`} >
                     <img className="img-circle"
                          key={obj.id}
-                         onClick={ ()=>{} }
                          src={`https://image.tmdb.org/t/p/w342//${movieArr2[index].poster_path}`}/>
                 </Link>
               </div>

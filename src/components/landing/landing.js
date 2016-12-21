@@ -1,5 +1,5 @@
 import React from 'react'
-import { connect,} from 'react-redux'
+import { connect } from 'react-redux'
 import Description from './left/description.js'
 import MovieList from './right/movie-list.js'
 import Search from '../misc/search.js'

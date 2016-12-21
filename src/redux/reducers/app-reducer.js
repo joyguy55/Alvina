@@ -7,7 +7,6 @@ const initial ={
 function App( state = initial, action){
   const actions = {
     'RECEIVED_DATA': () => {
-      console.log(action.payload)
      return { ...state, 'movieList': action.payload }
     }
   }

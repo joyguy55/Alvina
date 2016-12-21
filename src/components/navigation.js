@@ -18,7 +18,7 @@ const Navigation = () => (
       <Match exactly pattern="/" component={Landing} />
       <Match pattern="/about" component={About} />
       <Match pattern="/contribute" component={Contribute} />
-      <Match pattern="/vote-form" component={VoteForm} />
+      <Match pattern="/vote-form/:id" component={VoteForm} />
       <Miss component={NoMatch}/>
     </div>
   </BrowserRouter>
