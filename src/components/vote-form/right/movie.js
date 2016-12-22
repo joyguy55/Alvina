@@ -3,7 +3,7 @@ import './style.css'
 
 const MovieSelection= (props) =>{
     const movie = props.movieData.filter( (item) => {
-         return item.id == props.movieSelection } // double vs. triple equality ??
+         return item.id.toString() === props.movieSelection } // double vs. triple equality ??
      )
     return(
       <div className="movies-display">
