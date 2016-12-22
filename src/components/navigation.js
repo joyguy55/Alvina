@@ -4,7 +4,7 @@ import Contribute from './contribute/contribute.js'
 import Landing from './landing/landing.js'
 import VoteForm from './vote-form/vote-form.js'
 
-import './style.css'
+import './style.scss'
 import { BrowserRouter, Match, Miss, Link, NoMatch } from 'react-router'
 
 const Navigation = () => (
