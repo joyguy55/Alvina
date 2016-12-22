@@ -3,9 +3,8 @@ import './style.css'
 
 const MovieSelection= (props) =>{
     const movie = props.movieData.filter( (item) => {
-         return item.id == props.movieSelection }
+         return item.id == props.movieSelection } // double vs. triple equality ??
      )
-    console.log(movie)
     return(
       <div className="movies-display">
           <img className="selected-img"
@@ -16,9 +15,3 @@ const MovieSelection= (props) =>{
 }
 
 export default MovieSelection
-
-//<img src={`https://image.tmdb.org/t/p/w342//${movieArr1[index].poster_path}`}/>
-
-// <img className="img-circle"
-//      key={.id}
-//      src={`https://image.tmdb.org/t/p/w342//${movieArr1[index].poster_path}`}/>

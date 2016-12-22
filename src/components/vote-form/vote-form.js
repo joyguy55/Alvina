@@ -8,7 +8,6 @@ class VoteForm extends React.Component{
 
   render(){
     const props = this.props
-    console.log(props)
     return(
       <div className="vote-form">
         <Search handleParam={props.handleParam}/>
