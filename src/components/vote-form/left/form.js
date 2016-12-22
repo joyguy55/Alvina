@@ -1,7 +1,7 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 
-const Description= (props) =>{
+const Form = (props) =>{
     return(
       <div className="description-container">
         <div className="description">
@@ -10,4 +10,4 @@ const Description= (props) =>{
     )
 }
 
-export default Description
+export default Form

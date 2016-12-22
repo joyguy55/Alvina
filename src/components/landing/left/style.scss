@@ -5,17 +5,20 @@
   text-align: left;
   position: fixed;
   left: 0;
-}
 
-.description{
-  display: inline-block;
-  width: 400px;
-  margin: 170px 100px;
-  text-align: left;
-  position: fixed;
-  left: 0;
-}
+  .description{
+    display: inline-block;
+    width: 400px;
+    margin: 100px 100px;
+    text-align: left;
+    position: fixed;
+    left: 0;
+  }
 
-p{
-  width: 320px;
+  p{
+    width: 320px;
+    opacity: .7;
+    line-height: 1.9;
+  }
+
 }

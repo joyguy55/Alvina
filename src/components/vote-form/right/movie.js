@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 
 const MovieSelection= (props) =>{
     const movie = props.movieData.filter( (item) => {

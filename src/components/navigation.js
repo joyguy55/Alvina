@@ -2,7 +2,7 @@ import React from 'react'
 import About from './about/about.js'
 import Contribute from './contribute/contribute.js'
 import Landing from './landing/landing.js'
-import VoteForm from './vote-form/vote-form.js'
+import Vote from './vote-form/vote.js'
 
 import './style.scss'
 import { BrowserRouter, Match, Miss, Link, NoMatch } from 'react-router'
@@ -18,7 +18,7 @@ const Navigation = () => (
       <Match exactly pattern="/" component={Landing} />
       <Match pattern="/about" component={About} />
       <Match pattern="/contribute" component={Contribute} />
-      <Match pattern="/vote-form/:id" component={VoteForm} />
+      <Match pattern="/vote-form/:id" component={Vote} />
       <Miss component={NoMatch}/>
     </div>
   </BrowserRouter>

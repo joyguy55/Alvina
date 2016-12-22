@@ -1,19 +1,18 @@
 .navigation{
-}
+ ul{
+   display: flex;
+   list-style: none;
+   position: fixed;
+   margin: 100px 100px 0px 100px;
+   padding: 0px;
+ }
 
-ul{
-  display: flex;
-  list-style: none;
-  position: fixed;
-  margin: 100px;
-  padding: 0px;
-}
+ li .link{
+ 	padding: 25px;
+   text-decoration: none;
+ }
 
-li .link{
-	padding: 25px;
-  text-decoration: none;
-}
-
-li :first-child{
-  padding-left: 0px;
+ li :first-child{
+   padding-left: 0px;
+ }
 }
