@@ -22,6 +22,5 @@ const Form = (props) =>{
 
 export default Form
 
-
 // can I extract the object from the Array more literally than is being
 // accomplished in this instance ??
