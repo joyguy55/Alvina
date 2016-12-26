@@ -12,12 +12,10 @@ const Navigation = () => (
     <div className="navigation">
       <ul>
         <li><Link className="link" to="/">Home</Link></li>
-        <li><Link className="link" to="/about">About</Link></li>
-        <li><Link className="link" to="/donate">Affiliate</Link></li>
       </ul>
       <Match exactly pattern="/" component={Landing} />
       <Match pattern="/about" component={About} />
-      <Match pattern="/contribute" component={Contribute} />
+      <Match pattern="/Contribute" component={Contribute} />
       <Match pattern="/vote-form/:id" component={Vote} />
       <Miss component={NoMatch}/>
     </div>

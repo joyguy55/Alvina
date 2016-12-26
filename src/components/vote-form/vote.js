@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Form from './left/form.js'
 import MovieSelection from './right/movie.js'
-import Search from '../misc/search.js'
 
 class Vote extends React.Component{
 
@@ -10,7 +9,9 @@ class Vote extends React.Component{
     const props = this.props
     return(
       <div className="vote-container">
-        <Form movieData={props.movieData}/>
+        <Form movieData={props.App.movieList}
+              movieSelection={props.params.id}
+        />
         <MovieSelection movieData={props.App.movieList}
                         movieSelection={props.params.id}
         />
