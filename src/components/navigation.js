@@ -11,20 +11,22 @@ import './style.scss'
 import { BrowserRouter, Match, Miss, Link, NoMatch } from 'react-router'
 
 const Navigation = (props) => (
-  <BrowserRouter>
-    <div className="navigation">
-      <ul>
-        <li><Link className="link" to="/">Home</Link></li>
-        { props.App.rankList.length === 0 ? null : <li><Link className="link" to="/rank-chart">My Top Pics</Link></li> }
-      </ul>
-      <Match exactly pattern="/" component={Landing} />
-      <Match pattern="/about" component={About} />
-      <Match pattern="/Contribute" component={Contribute} />
-      <Match pattern="/vote-form/:id" component={Vote} />
-      <Match pattern="/rank-chart" component={RankChart} />
-      <Miss component={NoMatch}/>
-    </div>
-  </BrowserRouter>
+  <div>
+    <BrowserRouter>
+      <div className="navigation">
+        <ul>
+          <li><Link className="link" to="/">Home</Link></li>
+          { props.App.rankList.length === 0 ? null : <li><Link className="link" to="/rank-chart">Top Pics</Link></li> }
+        </ul>
+        <Match exactly pattern="/" component={Landing} />
+        <Match pattern="/about" component={About} />
+        <Match pattern="/Contribute" component={Contribute} />
+        <Match pattern="/vote-form/:id" component={Vote} />
+        <Match pattern="/rank-chart" component={RankChart} />
+        <Miss component={NoMatch}/>
+      </div>
+    </BrowserRouter>
+  </div>
 )
 
 export default connect(

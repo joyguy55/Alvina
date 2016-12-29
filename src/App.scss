@@ -1,3 +1,11 @@
 .App {
-  text-align: center;
+  margin: 25px 100px;
+  .container{
+    position: fixed;
+    .logo{
+      width: 75px;
+      display: inline-block;
+      // position: fixed;
+    }
+  }
 }

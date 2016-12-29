@@ -14,7 +14,7 @@ const Form = (props) =>{
         <div className="description">
          <h4>{movie[0].title}</h4>
          <p>{description}...</p>
-         <RaisedButton className="add" label="Add to Top-5" onTouchTap={()=>{props.addMovie(movie[0])}}/>
+         <RaisedButton className="add" label="Add" onTouchTap={()=>{props.addMovie(movie[0])}}/>
         </div>
       </div>
     )

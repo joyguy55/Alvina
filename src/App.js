@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import Navigation from './components/navigation.js'
 import * as actions from './redux/actions/app-action.js'
+import Search from './components/misc/search.js'
 
 class App extends Component {
 
@@ -16,7 +17,11 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-          <Navigation/>
+        <div className="container">
+          <div className="logo">Logo</div>
+          <Search handleParam={ this.props.handleParam }/>
+        </div>
+        <Navigation/>
         </div>
       </MuiThemeProvider>
     );
@@ -24,10 +29,8 @@ class App extends Component {
 }
 
 export default connect(
-  // function mapStateToProps(state){
-  //   return state},
-  state => ({}),
+  function mapStateToProps(store){
+     return store
+  },
   dispatch => ( {...bindActionCreators(actions, dispatch)} )
-  // function mapDispatchToProps(dispatch){
-  //   return bindActionCreators(actions, dispatch)},
 )(App)
