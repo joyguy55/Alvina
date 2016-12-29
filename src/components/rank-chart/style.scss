@@ -1,0 +1,17 @@
+.rank-container{
+ display: inline-block;
+ width: 320px;
+ margin: 180px 85px;
+ text-align: left;
+ position: fixed;
+ left: 0;
+ .subheader{
+  font-size: 24px !important;
+ }
+ img{
+  margin: auto;
+ }
+ .rank-item{
+  margin: 50px;
+ }
+}

@@ -1,7 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import Form from './left/form.js'
 import MovieSelection from './right/movie.js'
+import * as actions from '../../redux/actions/app-action.js'
 
 class Vote extends React.Component{
 
@@ -11,6 +13,7 @@ class Vote extends React.Component{
       <div className="vote-container">
         <Form movieData={props.App.movieList}
               movieSelection={props.params.id}
+              addMovie={props.addMovie}
         />
         <MovieSelection movieData={props.App.movieList}
                         movieSelection={props.params.id}
@@ -22,7 +25,8 @@ class Vote extends React.Component{
 }
 
 export default connect(
-    function mapStateToProps(store){
-        return store
-    },
+  function mapStateToProps(store){
+     return store
+  },
+  dispatch => ( {...bindActionCreators(actions, dispatch)} )
 )(Vote)

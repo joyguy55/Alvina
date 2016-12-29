@@ -5,8 +5,8 @@ const LandCTA = (props) =>{
     return(
       <div className="description-container">
         <div className="description">
-          <h4>Bring it Back</h4>
-          <p>Like good memories some films are soo good they should never leave the big screen. We want to make that possible. Help us make that a reality by answering a few questions.</p>
+          <h4>Top Lists</h4>
+          <p>Help people avoid the ominous what should we watch tonight by adding to your top movie lists.</p>
         </div>
       </div>
     )

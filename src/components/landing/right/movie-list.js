@@ -9,7 +9,7 @@ const MovieList= (props) => {
       <div className="movies-container">
         <div className="col1">
         {
-          movieArr1.map((obj,index)=>{
+          movieArr1.map( (obj,index)=>{
             return(
               <div key={obj.id} className="movie-container">
                 <Link to={`/vote-form/${obj.id}`} >
@@ -24,7 +24,7 @@ const MovieList= (props) => {
         </div>
         <div className="col2">
         {
-          movieArr2.map((obj,index)=>{
+          movieArr2.map( (obj,index)=>{
             return(
               <div key={obj.id} className="movie-container">
                 <Link to={`/vote-form/${obj.id}`} >
